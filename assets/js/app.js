@@ -4,6 +4,12 @@ button.addEventListener('click', function() {
     okLetsGo();
 });
 
+document.addEventListener('keyup', event => {
+    if (event.code === 'Space') {
+        okLetsGo();
+    }
+});
+
 // Plays the audio
 function okLetsGo() {
     let audio = document.getElementById("audio");
